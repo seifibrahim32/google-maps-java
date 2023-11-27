@@ -166,7 +166,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void getLocationDetails(Marker marker) {
-        String apiKey = "AIzaSyBDVZ5g_EAi5cOFATE8MaB_p9uPn4MfcRQ";
+        String apiKey = "";
         LatLng latLng = marker.getPosition();
         Call<Response> call = RetrofitClient.getInstance()
                 .getAPI()
